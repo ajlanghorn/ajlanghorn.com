@@ -15,6 +15,9 @@
                 {{ range .Site.Menus.header }}
                 <a href="{{ .URL | relURL }}"{{ if eq .URL $.RelPermalink }} aria-current="page"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a>
                 {{ end }}
+                <a href="/blog">Blog</a>
+                <a href="/resume">Resume</a>
+                <a href="/contact">Contact</a>
                 <button id="dark-mode-button"></button>
             </div>
             </div>
