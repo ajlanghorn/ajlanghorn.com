@@ -1,22 +1,6 @@
 {{ define "main" }}
 
 <div class="container">
-    <article>
-        <header class="article-header">
-            <div class="thumb">
-               <div>
-                  <div class="post-meta">
-                        <div class="tags">
-                            {{ range (.GetTerms "tags") }}
-                            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </article>
-
     <div class="article-post">
     {{ .Content }}
     </div>
